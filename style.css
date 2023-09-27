@@ -1,0 +1,99 @@
+body,
+html,
+* {
+    font-size: 10px;
+    box-sizing: border-box;
+}
+body{
+    background: #88a78e;
+}
+@font-face {
+    font-family: "Title Font";
+    src: url(Wild\ Things.TTF);
+}
+@font-face {
+    font-family: "Pet Shop";
+    src: url(Pet\ Shop.otf);
+}
+@font-face {
+    font-family: "Doom";
+    src: url(Doom.ttf);
+}
+#title{
+    text-align: center;
+    font-family: "Title Font";
+    font-size: 15rem;
+}
+.main_container{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 15px;
+    justify-content: space-around;
+    align-items: center;
+    align-content: space-between;
+}
+.images_of_animals{
+    margin: 10px;
+    height: 85%;
+    width: 96%;
+    align-self: center;
+    border-radius: 30px;
+}
+.captions{
+    width: fit-content;
+    height: fit-content;
+    font-size: 8rem;
+    font-family: "Pet Shop";
+    font-weight: 1000;
+    text-align:center;
+}
+.imagewithtext{
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+    width: 30%;
+    height: 75%;
+    margin: auto;
+    border-radius: 25px;
+    height: 700px;
+    width: 30%;
+    background-color: #B37BA4;
+    margin: 10px;
+}
+#smurfcat{
+    display: block;
+    height: 75%;
+    width: 96%;
+    align-items: center;
+    position: relative;
+}
+.background_smurf_cat{
+    background-color: rgb(206, 116, 233);
+    width: 60%;
+    height: 60%;
+    align-items: center;
+    border-radius: 50px;
+}
+.background_smurf_cat:hover{
+    background-color: #5ae3f5;
+    transform: rotate(3);
+}
+#smurf_text{
+    font-family: "Pet Shop";
+    font-size: 12rem;
+    font-weight: 10000;
+    text-align: center;
+}
+#disciples_text{
+    height:fit-content;
+    width: 100%;
+    font-size: 25rem;
+    text-align: center;
+    font-family: "Doom";
+    margin: 0px;
+}
+.imagewithtext:hover {
+    transform:scale(1.07);
+    background-color: #5ae3f5;
+    transform: rotate(3);
+}
