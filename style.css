@@ -42,7 +42,7 @@ body{
 .captions{
     width: fit-content;
     height: fit-content;
-    font-size: 8rem;
+    font-size: 8em;
     font-family: "Pet Shop";
     font-weight: 1000;
     text-align:center;
@@ -58,7 +58,8 @@ body{
     height: 700px;
     width: 30%;
     background-color: #B37BA4;
-    margin: 10px;
+    margin: 30px;
+    box-shadow:10px 10px 5px #5ae3f5, -1em 10px 5px#5ae3f5;
 }
 #smurfcat{
     display: block;
@@ -68,15 +69,19 @@ body{
     position: relative;
 }
 .background_smurf_cat{
-    background-color: rgb(206, 116, 233);
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+    background-color: rgb(236, 55, 146);
     width: 60%;
     height: 60%;
     align-items: center;
     border-radius: 50px;
 }
 .background_smurf_cat:hover{
-    background-color: #5ae3f5;
-    transform: rotate(3);
+    background-color: #e9482c;
+    transition-duration: 10s;
+    transform:skew(3turn);
 }
 #smurf_text{
     font-family: "Pet Shop";
@@ -85,15 +90,18 @@ body{
     text-align: center;
 }
 #disciples_text{
+    font-size: 25rem;
     height:fit-content;
     width: 100%;
-    font-size: 25rem;
     text-align: center;
     font-family: "Doom";
     margin: 0px;
 }
+#disciples_text:hover{
+    animation:1s linear 1s infinite;
+}
 .imagewithtext:hover {
+    transition-duration: .5s;
     transform:scale(1.07);
     background-color: #5ae3f5;
-    transform: rotate(3);
 }
