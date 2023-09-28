@@ -38,11 +38,13 @@ body{
     width: 96%;
     align-self: center;
     border-radius: 30px;
+    border-style: solid;
+    border-color: #000000 1%;
 }
 .captions{
     width: fit-content;
     height: fit-content;
-    font-size: 8em;
+    font-size: 5em;
     font-family: "Pet Shop";
     font-weight: 1000;
     text-align:center;
@@ -51,12 +53,12 @@ body{
     flex-direction: column;
     align-items: center;
     display: flex;
-    width: 30%;
-    height: 75%;
     margin: auto;
+    border-style: solid;
+    border-color: #000000 1%;
     border-radius: 25px;
-    height: 700px;
-    width: 30%;
+    height: 600px;
+    width: 20%;
     background-color: #B37BA4;
     margin: 30px;
     box-shadow:10px 10px 5px #5ae3f5, -1em 10px 5px#5ae3f5;
@@ -72,16 +74,17 @@ body{
     flex-direction: column;
     align-items: center;
     display: flex;
-    background-color: rgb(236, 55, 146);
-    width: 60%;
-    height: 60%;
+    background-color: rgb(230, 71, 150);
+    width: 50%;
+    height: 50%;
     align-items: center;
     border-radius: 50px;
 }
 .background_smurf_cat:hover{
     background-color: #e9482c;
     transition-duration: 10s;
-    transform:skew(3turn);
+    scale: 1.05;
+    transform:skew(2turn);
 }
 #smurf_text{
     font-family: "Pet Shop";
@@ -90,18 +93,39 @@ body{
     text-align: center;
 }
 #disciples_text{
-    font-size: 25rem;
-    height:fit-content;
+    font-size: 20em;
     width: 100%;
     text-align: center;
     font-family: "Doom";
-    margin: 0px;
-}
-#disciples_text:hover{
-    animation:1s linear 1s infinite;
+    margin: 0;
 }
 .imagewithtext:hover {
     transition-duration: .5s;
     transform:scale(1.07);
     background-color: #5ae3f5;
+    box-shadow:10px 10px 5px #5af574, -1em 10px 5px#5af574;
+    font-size: 1.2rem;
+    border-color: white;
+}
+#slide_text{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    font-size: 2em;
+}
+#individual_text{
+    font-size: 10rem;
+    margin: 0;
+}
+
+@media screen and (max-width:1000px){
+    .imagewithtext{
+        width: 90%;
+    }
+}
+@media screen and (max-width:600px){
+    .imagewithtext{
+        width: 40%;
+    }
 }
