@@ -130,6 +130,11 @@ body{
         width: 40%;
     }
 }
+@media screen and (max-width:412px){
+    .imagewithtext{
+        width: 90%;
+    }
+}
 @keyframes fade{
     from{
         opacity: 0;
